@@ -1,8 +1,4 @@
-import sys
-
-if sys.version_info.major != 3:
-    print("Please use Python version 3")
-    exit(0)
+import version_lock
 
 with open("rsa1024_public_key.txt","r") as file:
     public_string = file.read()

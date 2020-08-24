@@ -1,3 +1,5 @@
+import version_lock
+
 def hex_numeral_to_hex(n):
     if n >= 10:
         return chr(n+55)
