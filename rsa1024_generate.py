@@ -5,9 +5,8 @@ if sys.version_info.major != 3:
     exit(0)
 
 from Crypto.PublicKey import RSA
-import secrets
 
-private_key = RSA.generate(1024,randfunc=secrets.token_bytes)
+private_key = RSA.generate(1024)
 private_string = private_key.exportKey().decode("UTF-8")
 
 print("")
